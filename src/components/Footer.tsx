@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
                 JOB CIRCLE
               </h1>
             </div>
-            <div className="px-3">
+            <div className="px-3 mt-3">
               <p>Job Circle  Pvt. Ltd.</p>
               <p>Manamiju, Nasal Mandir,KTM</p>
               <p>Nepal +977-9767240884 | sukrajchaudhary90@gmail.com</p>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
               About  JOB CIRCLE
               </h1>
             </div>
-            <div className="px-3 flex flex-col gap-4">
+            <div className="px-3 flex flex-col gap-4 mt-3">
               <p>About Us</p>
               <p>Our Services</p>
               <p>Our Blogs</p>
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
               For Candidates
               </h1>
             </div>
-            <div className="px-3 flex flex-col gap-4">
+            <div className="px-3 flex flex-col gap-4 mt-3">
               <p>Build Your Profile</p>
               <p>Intrenship/jobs</p>
               <p>Brouse Events</p>
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
               For Employers
               </h1>
             </div>
-            <div className="px-3 flex flex-col gap-4">
+            <div className="px-3 flex flex-col gap-4 mt-3">
               <p>Become an Employer</p>
               <p>Post New Intrenship</p>
              
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
               For Institutes
               </h1>
             </div>
-            <div className="px-3 flex flex-col gap-4">
+            <div className="px-3 flex flex-col gap-4 mt-3">
               <p>Register as institute</p>
               <p>Organize an events</p>
             
