@@ -7,11 +7,17 @@ import Login from "./pages/Authentication/Login";
 import Singup from "./pages/Authentication/Singup";
 import Layout from "./Layouts/Layout";
 import Employeer from "./pages/Dashboard/Employeer";
-import UserDasboard from "./pages/UserDashboardComponents/EmployeeDashboard";
-import SearchOpportunity from "./pages/UserDashboardComponents/SearchOpportunity";
-import EmployeeProfile from "./pages/UserDashboardComponents/EmployeeProfile";
-import EmployeeApplication from "./pages/UserDashboardComponents/EmployeeApplication";
-import EmployeeSetting from "./pages/UserDashboardComponents/EmployeeSetting";
+import UserDasboard from "./pages/EmployeeDashboardComponents/EmployeeDashboard";
+import SearchOpportunity from "./pages/EmployeeDashboardComponents/SearchOpportunity";
+import EmployeeProfile from "./pages/EmployeeDashboardComponents/EmployeeProfiles/EmployeeProfileDashboard";
+import EmployeeApplication from "./pages/EmployeeDashboardComponents/EmployeeApplication";
+import EmployeeSetting from "./pages/EmployeeDashboardComponents/EmployeeSetting";
+import About from "./pages/EmployeeDashboardComponents/EmployeeProfiles/About";
+import Education from "./pages/EmployeeDashboardComponents/EmployeeProfiles/Education";
+import Skills from "./pages/EmployeeDashboardComponents/EmployeeProfiles/Skills";
+import Language from "./pages/EmployeeDashboardComponents/EmployeeProfiles/Language";
+import ForgetPassword from "./pages/Authentication/ForgetPassword";
+import ResetPassword from "./pages/Authentication/ResetPassword";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: "ViewJobsDetailsPages/:id",
         element: <ViewJobsDetailsPages />,
+      },
+      {
+        path: "Forget-Password",
+        element: <ForgetPassword />,
+      },
+      {
+        path: "Reset-Password",
+        element: <ResetPassword />,
       },
     ],
   },
@@ -46,6 +60,25 @@ const router = createBrowserRouter([
       {
         path: "profile",
         element: <EmployeeProfile />,
+        children: [
+          {
+            path: "about",
+            index: true,
+            element: <About />,
+          },
+          {
+            path: "education",
+            element: <Education />,
+          },
+          {
+            path: "skills",
+            element: <Skills />,
+          },
+          {
+            path: "language",
+            element: <Language />,
+          },
+        ],
       },
       {
         path: "application",

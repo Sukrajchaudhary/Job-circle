@@ -1,5 +1,5 @@
 import img from "../assets/asset 2.jpeg";
-import img1 from "../assets/asset 3.jpeg"
+import img1 from "../assets/asset 3.jpeg";
 const Home = () => {
   return (
     <>
@@ -13,33 +13,16 @@ const Home = () => {
             internships.
           </p>
           <div>
-            <form className="mt-6 flex flex-col md:flex-row rounded-xl md:rounded-full  bg-white p-3 md:p-1 text-black min-w-max">
+            <form className="mt-6 flex flex-col md:flex-row rounded-xl md:rounded-full  bg-white p-2 md:p-1 text-black min-w-max">
               <div className="relative " data-headlessui-state="">
-                <button
-                  className="w-full flex cursor-pointer items-center justify-between gap-2 border border-gray-200 px-4 py-3 bg-red-100 font-medium rounded-full  min-w-[12rem] h-full"
-                  id="headlessui-listbox-button-:R6bhauila:"
-                  type="button"
-                  aria-haspopup="listbox"
-                  aria-expanded="false"
-                  data-headlessui-state=""
-                >
-                  <p> {/* */}All Opportunities</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    className="h-5 w-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </button>
+                <div className="w-full flex cursor-pointer items-center justify-between  border border-gray-200 px-4 py-3 bg-red-100  rounded-full  min-w-[12rem] h-full">
+                  <select className=" flex py-1 cursor-pointer w-full text-sm font-semibold text-red-500 rounded-lg bg-red-100 ">
+                    <option value="">All Opportunities</option>
+
+                    <option value="intrenship">Intrenship</option>
+                    <option value="jobs">Jobs</option>
+                  </select>
+                </div>
               </div>
               <input
                 type="text"
@@ -70,6 +53,7 @@ const Home = () => {
                 </svg>
               </button>
             </form>
+            {/*  */}
             <ul className="flex gap-4 flex-wrap justify-center md:flex-nowrap mt-8 mb-20 ">
               <span className="font-semibold tracking-wide">
                 Popular Searches:
@@ -93,6 +77,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/*  */}
       <section className="container flex flex-col md:flex-row gap-12 py-14">
         <div className=" grid sm:grid-cols-2 gap-10 container max-w-7xl mx-auto p-5 ">
           <div className="rounded-3xl py-7 sm:py-14 px-6 sm:px-11 space-y-4  relative overflow-hidden hover:-translate-y-2 transition-all ">
@@ -104,7 +89,6 @@ const Home = () => {
               decoding="async"
               data-nimg={1}
               className=" absolute top-0 left-0 -z-10 w-full h-full object-cover"
-             
               src={img}
               style={{ color: "transparent" }}
             />
@@ -129,7 +113,6 @@ const Home = () => {
               decoding="async"
               data-nimg={1}
               className=" absolute top-0 left-0 -z-10 w-full h-full object-cover"
-            
               src={img1}
               style={{ color: "transparent" }}
             />

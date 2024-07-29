@@ -176,7 +176,7 @@ const Employeer: React.FC = () => {
             </li>
             <li>
               <Link
-                to="/Employee/Home/profile"
+                to="/Employee/Home/profile/about"
                 className={`${
                   location.pathname === "/Employee/Home/profile"
                     ? "bg-red-600 hover:bg-red-500"

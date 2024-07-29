@@ -37,12 +37,12 @@ const Login: React.FC = () => {
                 >
                   Password *
                 </label>
-                <a
-                  href="#"
+                <Link
+                  to="/Forget-Password"
                   className="text-xs text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Forget Password?
-                </a>
+                </Link>
               </div>
               <input
                 type="password"
